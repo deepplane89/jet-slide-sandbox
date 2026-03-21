@@ -64,40 +64,34 @@
       </div>
     </div>
 
-    <button id="start-btn" class="btn-space">SPACE</button>
-    <button id="death-run-btn" class="btn-death-run">DEATH RUN</button>
+    <!-- Mode buttons -->
+    <div class="title-mode-buttons">
+      <button id="start-btn" class="btn-mode btn-campaign">▶ CAMPAIGN</button>
+      <button id="death-run-btn" class="btn-mode btn-deathrun">▶ DEATH RUN</button>
+    </div>
 
-    <!-- High Score Leaderboard -->
-    <div class="leaderboard" id="leaderboard">
-      <div class="leaderboard-label">TOP PILOTS</div>
-      <div class="leaderboard-list" id="leaderboard-list">
-        <!-- Populated by JS -->
+    <!-- Leaderboard (collapsible) -->
+    <div class="leaderboard lb-collapsible" id="leaderboard">
+      <div class="leaderboard-label lb-toggle" onclick="this.parentElement.classList.toggle('lb-open')">TOP PILOTS ▾</div>
+      <div class="leaderboard-list lb-body" id="leaderboard-list"></div>
+    </div>
+
+    <!-- Admin panel (triple-tap title to show) -->
+    <div id="admin-panel" class="admin-panel hidden">
+      <div class="admin-label">ADMIN</div>
+      <div class="admin-level-btns">
+        <button class="level-btn" data-level="0">L1</button>
+        <button class="level-btn" data-level="1">L2</button>
+        <button class="level-btn" data-level="2">L3</button>
+        <button class="level-btn" data-level="3">L4</button>
+        <button class="level-btn" data-level="4">L5</button>
       </div>
-    </div>
-
-    <div class="title-controls">
-      <div class="ctrl-row"><span class="ctrl-key">← →</span><span class="ctrl-desc">STEER</span></div>
-      <div class="ctrl-row"><span class="ctrl-key">↑ ↓</span><span class="ctrl-desc">ROLL AXIS</span></div>
-      <div class="ctrl-row"><span class="ctrl-key">SPACE</span><span class="ctrl-desc">PAUSE</span></div>
-    </div>
-    <!-- Level chooser — mobile only, shown via CSS -->
-    <div class="level-chooser" id="level-chooser">
-      <div class="level-chooser-label">START AT LEVEL</div>
-      <div class="level-chooser-btns">
-        <button class="level-btn" data-level="0">1<span>NEON DAWN</span></button>
-        <button class="level-btn" data-level="1">2<span>ULTRAVIOLET</span></button>
-        <button class="level-btn" data-level="2">3<span>CRIMSON VOID</span></button>
-        <button class="level-btn" data-level="3">4<span>ICE STORM</span></button>
-        <button class="level-btn" data-level="4">5<span>VOID SINGULARITY</span></button>
+      <div class="perf-toggle-wrap">
+        <span class="perf-label">PERF MODE</span>
+        <button id="perf-toggle" class="perf-toggle" aria-label="Toggle performance mode" aria-pressed="false">
+          <span class="perf-knob"></span>
+        </button>
       </div>
-    </div>
-
-    <!-- Performance Mode toggle -->
-    <div class="perf-toggle-wrap">
-      <span class="perf-label">PERFORMANCE MODE</span>
-      <button id="perf-toggle" class="perf-toggle" aria-label="Toggle performance mode" aria-pressed="false">
-        <span class="perf-knob"></span>
-      </button>
     </div>
   </div>
 </div>
