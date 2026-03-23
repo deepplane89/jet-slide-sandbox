@@ -990,8 +990,13 @@ html, body {
 }
 .pause-actions {
   display: flex;
-  gap: var(--space-4);
+  flex-direction: column;
+  gap: var(--space-3);
   align-items: center;
+  width: 100%;
+}
+.pause-actions .btn-space {
+  width: 220px;
 }
 
 /* ── TOUCH CONTROLS ──────────────────────────────────── */
