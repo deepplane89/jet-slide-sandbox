@@ -726,7 +726,7 @@ html, body {
   position: fixed;
   top: 16px;
   right: 16px;
-  z-index: 52;
+  z-index: 110;
   pointer-events: auto;
   font-size: 22px;
   color: rgba(255,255,255,0.5);
