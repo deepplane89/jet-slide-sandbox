@@ -974,11 +974,13 @@ html, body {
 }
 .pause-overlay.hidden { display: none; }
 .pause-content {
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--space-8);
+  padding: 24px;
 }
 .pause-title {
   font-family: var(--font-display);
@@ -998,6 +1000,19 @@ html, body {
 .pause-actions .btn-space {
   width: 220px;
 }
+.pause-gear {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.35);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 6px;
+  -webkit-tap-highlight-color: transparent;
+}
+.pause-gear:hover, .pause-gear:active { color: rgba(255,255,255,0.6); }
 
 /* ── TOUCH CONTROLS ──────────────────────────────────── */
 .touch-controls {
