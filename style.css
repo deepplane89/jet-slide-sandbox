@@ -1938,6 +1938,8 @@ html, body {
 .btn-campaign:active { background: rgba(0,238,255,0.12); }
 .btn-deathrun { border-color: #ff1a8c; color: #ff1a8c; }
 .btn-deathrun:active { background: rgba(255,26,140,0.12); }
+.btn-testmode { border-color: #ffcc00; color: #ffcc00; }
+.btn-testmode:active { background: rgba(255,204,0,0.12); }
 
 .level-badges { display: flex; gap: 6px; align-items: center; justify-content: center; min-height: 36px; }
 .level-badge { transition: opacity 0.3s, filter 0.3s; }

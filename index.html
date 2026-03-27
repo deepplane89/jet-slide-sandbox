@@ -72,6 +72,7 @@
       <button id="start-btn" class="btn-mode btn-campaign">▶ CAMPAIGN</button>
       <div id="level-badges" class="level-badges"></div>
       <button id="death-run-btn" class="btn-mode btn-deathrun">▶ DEATH RUN</button>
+      <button id="test-mode-btn" class="btn-mode btn-testmode">▶ TEST MODE</button>
     </div>
 
     <!-- Leaderboard (collapsible) -->
@@ -151,6 +152,13 @@
   <!-- Active power-up tray -->
   <div id="powerup-tray" class="powerup-tray"></div>
 
+</div>
+
+<!-- ── Test Mode HUD ────────────────────────────── -->
+<div id="test-mode-hud" class="hidden" style="position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:200;font-family:monospace;color:#ffcc00;font-size:14px;text-align:center;pointer-events:none;text-shadow:0 0 8px rgba(255,204,0,0.5);">
+  <div id="tm-speed">SPEED: L3</div>
+  <div id="tm-cones" style="color:#888;">CONES: OFF (C to toggle)</div>
+  <div id="tm-controls" style="font-size:11px;color:#666;margin-top:4px;">1-5: Speed | SPACE: Jump | B: Build Mode | C: Cones | ESC: Pause</div>
 </div>
 
 <!-- Settings gear (title screen, top-right) -->
